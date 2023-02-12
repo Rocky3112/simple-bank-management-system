@@ -5,6 +5,12 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
     depositField.value = '';
 
+    
+    if(isNaN(newDepositAmmount)){
+        alert('Please Enter a Number');
+        return;
+    }
+
     const depositTotalElement = document.getElementById('deposit-total');
     const previousDepositTotalString = depositTotalElement.innerText;
 
