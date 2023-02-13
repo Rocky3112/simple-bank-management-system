@@ -4,7 +4,7 @@ document.getElementById('btn-Withdraw').addEventListener('click', function(){
     const newWithdrawAmmount = parseFloat(newWithdrawAmmountString);
 
     withdrawField.value = '';
-
+    //if anyone not enter the number value 
     if(isNaN(newWithdrawAmmount)){
         alert('Please Enter a Number');
         return;

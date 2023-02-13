@@ -4,7 +4,7 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const newDepositAmmount = parseFloat(newDepositAmmountString);
 
     depositField.value = '';
-
+    //if anyone not enter the number value 
     
     if(isNaN(newDepositAmmount)){
         alert('Please Enter a Number');
